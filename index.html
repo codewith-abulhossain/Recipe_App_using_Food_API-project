@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold text-white my-10">
+        Search For Your Meal 🔍
+      </h1>
+      <div
+        class="bg-white w-1/2 mx-auto p-2 border rounded-xl flex justify-between gap-2"
+      >
+        <input
+          type="text"
+          placeholder="Search Bar"
+          class="p-4 w-full rounded-xl border-transparent"
+          id="input"
+        />
+        <button class="btn bg-amber-400 p-2 rounded-xl font-bold" id="search">
+          Search
+        </button>
+      </div>
+    </div>
+    <div
+      class="containr mx-auto border border-gray-600 min-h-[600px] rounded-xl mt-6 p-4"
+    >
+      <h2
+        id="noMeal"
+        class="text-gray-300 text-center text-4xl mt-16 font-bold"
+      >
+        No Meal to Show 🥲
+      </h2>
+      <div class="meal-wrapper grid grid-cols-4 gap-5">
+        <!-- <div class="meal-box border border-amber-400 p-4">
+          <img
+            src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+            alt=""
+            class="rounded h-[250px] w-full object-cover"
+          />
+          <h3>Lorem, ipsum.</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            culpa!
+          </p>
+          <p><span>Lorem.</span> <span>Lorem.</span></p>
+          <a href="#"> Watch</a>
+          <button>View Recipe</button>
+        </div> -->
+        <!-- <div class="meal-box border border-amber-400 p-4">
+          <img
+            src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+            alt=""
+            class="rounded h-[250px] w-full object-cover"
+          />
+          <div class="p-3">
+            <h3 class="text-2xl text-white">Lorem, ipsum.</h3>
+            <p class="text-gray-400 mt-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+              culpa!
+            </p>
+            <p class="italic text-gray-500">
+              <span>Lorem.</span> <span>Lorem.</span>
+            </p>
+            <div class="mt-5 flex gap-5">
+              <a href="#" class="bg-amber-400 p-2 rounded"> Watch</a>
+              <button class="bg-amber-400 p-2 rounded">View Recipe</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="flex items-center justify-center min-h-screen">
+      <div>
+        <div
+          id="Details"
+          class="overlay fixed top-0 left-0 w-full h-full flex items-center justify-center bg-[#0000005e] invisible"
+        >
+          <!-- <div class="popup bg-white w-[70%] min-h-[500px] p-10">
+            <h2 class="text-2xl font-bold mb-4">Popup title</h2>
+            <p class="mb-6">popup content</p>
+            <button
+              class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
+            >
+              close
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
